@@ -3,270 +3,198 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>近三日信息流回顾｜2026-09-29—10-02</title>
+<meta name="description" content="三日信息流阅读刊：能源成本、主权债务与利率、AI基础设施三专题与四篇短读（2026-09-29 至 10-02，静态回顾）">
+<title>三日信息流阅读刊｜2026-09-29 — 10-02</title>
 <style>
-  :root { color-scheme: light; }
-  * { box-sizing: border-box; }
-  body { margin: 0; padding: 24px 16px 64px; background: #faf9f7; color: #1a1a1a;
-         font: 16px/1.75 -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; }
-  main { max-width: 960px; margin: 0 auto; }
-  h1 { font-size: 1.55rem; line-height: 1.35; margin: 0 0 6px; }
-  h2 { font-size: 1.22rem; margin: 44px 0 14px; padding-bottom: 6px; border-bottom: 2px solid #1a1a1a; }
-  h3 { font-size: 1.02rem; margin: 0 0 8px; }
-  .meta { color: #555; font-size: .95rem; margin: 0 0 4px; }
-  .window { background: #f0ede8; border-left: 4px solid #8a6d3b; padding: 10px 14px; border-radius: 0 6px 6px 0; font-size: .95rem; margin: 14px 0; }
-  .disclaimer { font-size: .9rem; color: #555; margin: 10px 0 0; }
-  .highlights { display: grid; gap: 12px; margin: 16px 0; }
-  .hl { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 12px 16px; }
-  .hl .src { font-size: .82rem; color: #7a5c2e; font-weight: 600; margin-right: 6px; }
-  .day { margin: 18px 0; }
-  .day > h3 { background: #1a1a1a; color: #fff; display: inline-block; padding: 2px 12px; border-radius: 4px; font-size: .95rem; }
-  .day ul { list-style: none; margin: 10px 0 0; padding: 0 0 0 4px; border-left: 2px solid #ccc; }
-  .day li { padding: 5px 0 5px 16px; position: relative; }
-  .day li::before { content: ""; position: absolute; left: -6px; top: 15px; width: 10px; height: 10px; border-radius: 50%; background: #ccc; }
-  .day li.ok::before { background: #2e7d32; }
-  .day li.bad::before { background: #c62828; }
-  .day li.star::before { background: #f9a825; }
-  .t { display: inline-block; min-width: 96px; font-variant-numeric: tabular-nums; color: #444; font-weight: 600; font-size: .92rem; }
-  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
-  .card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 14px 16px; }
-  .badge { display: inline-block; font-size: .78rem; font-weight: 700; padding: 1px 8px; border-radius: 10px; margin-bottom: 6px; }
-  .b-degrade { background: #fff3e0; color: #b26a00; border: 1px solid #e6c28a; }
-  .b-ok { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d0a8; }
-  .b-unknown { background: #ede7f6; color: #5e35b1; border: 1px solid #bfaedc; }
-  .card p { margin: 6px 0; font-size: .93rem; }
-  .card .k { color: #666; }
-  details { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 10px 16px; margin: 14px 0; }
-  summary { cursor: pointer; font-weight: 600; }
-  table { border-collapse: collapse; width: 100%; font-size: .9rem; margin: 8px 0; }
-  th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
-  th { background: #f0ede8; }
-  ul.plain { margin: 8px 0; padding-left: 22px; }
-  ul.plain li { margin: 5px 0; }
-  .links li { margin: 7px 0; font-size: .93rem; word-break: break-all; }
-  .links a { color: #0b57a4; }
-  .art { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 12px 16px; margin: 10px 0; }
-  .art h3 { font-size: .98rem; }
-  .art p { margin: 6px 0 0; font-size: .93rem; }
-  footer { margin-top: 44px; padding-top: 14px; border-top: 1px solid #ccc; font-size: .88rem; color: #555; }
+  :root{
+    --bg:#faf7f2; --ink:#26221c; --muted:#6b6259; --accent:#8a4a2b;
+    --line:#e6ddd1; --line-strong:#cfc2ac;
+    color-scheme: light;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+    font-size:17px; line-height:1.8;
+  }
+  .wrap{ max-width:1120px; margin:0 auto; padding:44px 24px 72px; }
+  .kicker{ font-size:14px; letter-spacing:.18em; color:var(--accent); font-weight:600; margin:0; }
+  h1{ font-size:1.9rem; line-height:1.3; margin:8px 0 6px; font-weight:700; }
+  .windowline{ font-size:.95rem; color:var(--muted); margin:0; }
+  .lead{ max-width:760px; margin:16px 0 0; }
+  .teasers{ list-style:none; padding:0; margin:20px 0 0; max-width:760px; }
+  .teasers li{ padding:9px 0; border-top:1px solid var(--line); }
+  .teasers li:last-child{ border-bottom:1px solid var(--line); }
+  .teasers a{ color:var(--ink); text-decoration:none; }
+  .teasers a:hover .tt{ color:var(--accent); }
+  .teasers .no{ color:var(--accent); font-weight:700; margin-right:10px; font-size:14px; }
+  .note{ font-size:.95rem; color:var(--muted); margin:18px 0 0; }
+  .layout{ display:grid; grid-template-columns:184px minmax(0,1fr); gap:56px; margin-top:52px; }
+  nav.toc{ position:sticky; top:24px; align-self:start; font-size:15px; }
+  nav.toc ol{ list-style:none; margin:0; padding:0; }
+  nav.toc a{
+    display:block; padding:9px 10px; color:var(--muted); text-decoration:none;
+    border-left:2px solid var(--line); min-height:44px;
+  }
+  nav.toc a:hover{ color:var(--accent); border-left-color:var(--accent); }
+  main{ max-width:760px; }
+  h2{ font-size:1.35rem; line-height:1.45; margin:0; padding:18px 0 6px; border-top:2px solid var(--ink); }
+  .sec{ margin-top:56px; }
+  h3{ font-size:1.05rem; line-height:1.6; margin:26px 0 8px; }
+  p{ margin:0 0 14px; }
+  .lab{ color:var(--accent); font-weight:700; }
+  .src{ display:block; font-size:14px; color:var(--accent); margin:-4px 0 16px; }
+  .src:hover{ text-decoration:underline; }
+  .art + .art{ border-top:1px solid var(--line); margin-top:24px; padding-top:4px; }
+  a{ color:var(--accent); }
+  a:focus-visible, summary:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; border-radius:2px; }
+  details#coverage{ margin-top:56px; border-top:2px solid var(--ink); padding:14px 0 0; }
+  details#coverage > summary{
+    cursor:pointer; font-size:1.35rem; font-weight:700; list-style-position:outside;
+    padding:6px 0; min-height:44px;
+  }
+  details#coverage[open] > summary{ margin-bottom:6px; }
+  footer{ margin-top:56px; border-top:1px solid var(--line-strong); padding-top:14px; font-size:.95rem; color:var(--muted); }
+  section, details{ scroll-margin-top:20px; }
+  @media (max-width:900px){
+    body{ font-size:16px; }
+    .wrap{ padding:32px 18px 56px; }
+    .layout{ display:block; }
+    nav.toc{ position:static; margin:0 0 12px; }
+    nav.toc ol{ display:flex; flex-wrap:wrap; gap:6px; }
+    nav.toc a{ border-left:none; border:1px solid var(--line); border-radius:999px; padding:8px 14px; min-height:44px; }
+  }
 </style>
 </head>
 <body>
-<main>
-  <h1>近三日信息流回顾｜2026-09-29—10-02</h1>
-  <p class="meta">静态回顾 · 截至 2026-10-02 14:22（北京时间） · 非实时行情</p>
-  <div class="window">
-    <strong>核查窗口：</strong>2026-09-29 14:22 至 2026-10-02 14:22（北京时间，固定 72 小时，不随阅读时间滑动）。<br>
-    本页整理既有自动简报在此窗口内的产出状态与已出版内容摘要。标注「简报记载」的内容为已出版报告的记述，未在本轮独立核实。
-  </div>
-  <p class="disclaimer">本页不含账户、持仓、收益明细或内部日志；所有内部简报以名称／版次／生成日期作出处。</p>
-
-  <h2>值得读（窗口内真正有内容的重点）</h2>
-  <div class="highlights">
-    <div class="hl"><span class="src">FT 晚刊 · 9-30</span><strong>能源与利率同时定价。</strong>简报记载：白宫讨论柴油出口禁令（柴油 6.53 美元/加仑、较战前高逾 70%）；美债 10 年期 5.23% 守住 2007 年以来高位；法国 10 年期国债升破 4.8%、法德利差 2012 年来首破 1.2 个百分点。三者为独立采写、方向一致的简报记述，非实时行情。</div>
-    <div class="hl"><span class="src">FT 晚刊 · 9-30</span><strong>AI 数据中心遭遇政治阻力。</strong>简报记载：1000+ 社区尝试限制 AI 基础设施项目，科技巨头联盟承诺「社区原则」以回应政治反弹；报告自注该承诺为自愿性质、缺乏执行机制，相关影响统计为单一来源口径。</div>
-    <div class="hl"><span class="src">运行状态</span><strong>FT 三天六轮仅 1 期成功出版。</strong>9-30 晚刊为窗口内唯一出版版次；其余 5 轮因采集发现失败（3 轮，主因本机代理故障）、采集预算耗尽（1 轮）、评审否决（1 轮）未出版。已出版那期的 10 段推送均获平台接受回执（仅发送侧证据）。</div>
-    <div class="hl"><span class="src">A股 · 简报记载</span><strong>收盘候选连续两期「市场门关闭」。</strong>9-29、9-30 两期因市场过弱按设计不产候选（fail-closed）；大盘复盘 3 期正常产出。部署后验收最新一期明确投递回执文件缺失，链路完整性未确认。</div>
-    <div class="hl"><span class="src">因子日报 · 10-01</span><strong>宏观数据降级。</strong>社媒热度较前值大幅回落；信用利差与美元流动性两项标为过期。两项过期期间不宜作实时宏观判断。</div>
-  </div>
-
-  <h2>三天时间线（北京时间）</h2>
-  <div class="day">
-    <h3>9-29（从 14:22 开始）</h3>
-    <ul>
-      <li><span class="t">15:25</span>A股大盘复盘产出（第 1 期）</li>
-      <li><span class="t">16:00</span>信号质量日报产出</li>
-      <li><span class="t">16:30</span>市场因子日报产出</li>
-      <li class="bad"><span class="t">16:45</span>A股收盘候选：市场门关闭（市场过弱），按设计无候选</li>
-      <li class="bad"><span class="t">19:30</span>FT 晚刊采集失败：发现阶段 0 候选（本机代理 TLS 中断）</li>
+<div class="wrap">
+  <header>
+    <p class="kicker">静态回顾 · 固定 72 小时窗口</p>
+    <h1>三日信息流阅读刊</h1>
+    <p class="windowline">2026-09-29 14:22 — 2026-10-02 14:22（北京时间 · 固定 72 小时 · 不随阅读时间滑动）</p>
+    <p class="lead">本刊把 9 月 29 日至 10 月 2 日信息流系统真正读到的内容，整理成三篇专题、四篇短读与三份内部简报的说明。全部正文事实出自 2026-09-30 晚出版的 FT 精读简报，其余为运行简报摘录。</p>
+    <ul class="teasers">
+      <li><a href="#energy"><span class="no">专题一</span><span class="tt">能源成本：柴油出口禁令进入白宫议程，燃料成本开始直接写进通胀与企业成本账。</span></a></li>
+      <li><a href="#rates"><span class="no">专题二</span><span class="tt">主权债务与利率：法国信用恶化与美债高位同日定价，财政赤字重回利率故事中心。</span></a></li>
+      <li><a href="#ai"><span class="no">专题三</span><span class="tt">AI 基础设施：数据中心扩张首次撞上社区、水电与选举政治的系统性约束。</span></a></li>
     </ul>
-  </div>
-  <div class="day">
-    <h3>9-30</h3>
-    <ul>
-      <li class="bad"><span class="t">07:30</span>FT 早刊未出版：采集预算耗尽；监测支路仅部分回执</li>
-      <li><span class="t">15:25–16:45</span>A股复盘、信号日报、因子日报照常产出；收盘候选连续第 2 期市场门关闭</li>
-      <li class="star"><span class="t">20:21</span>FT 晚刊出版成功：8 篇双轮核验正文、0 条 Citrini、3 条因子（窗口内唯一一期）</li>
-      <li class="ok"><span class="t">20:25</span>该期推送完成：10 段均获平台接受回执（发送侧证据，可见性未证实）</li>
-    </ul>
-  </div>
-  <div class="day">
-    <h3>10-1</h3>
-    <ul>
-      <li class="bad"><span class="t">07:30</span>FT 早刊未出版：评审否决</li>
-      <li><span class="t">15:25–16:30</span>A股复盘、信号日报、因子日报产出；因子日报中信用利差与美元流动性标为过期</li>
-      <li class="bad"><span class="t">17:45</span>A股收盘候选运行无输出（静默）</li>
-      <li class="bad"><span class="t">19:30</span>FT 晚刊未出版：本机代理端口故障</li>
-    </ul>
-  </div>
-  <div class="day">
-    <h3>10-2（截至 14:22）</h3>
-    <ul>
-      <li class="bad"><span class="t">04:19–05:04</span>信号推送 4 次脚本失败（格式化器依赖缺失）</li>
-      <li class="bad"><span class="t">07:30</span>FT 早刊未出版：导航因代理故障失败（未见验证码或付费墙）</li>
-      <li><span class="t">08:10</span>开盘桥接产出：仅页面变更监测（合并为 OpenAI／Anthropic 两类源变化，未提炼具体新闻）；隔夜行情源不可用</li>
-      <li class="bad"><span class="t">14:22</span>窗口结束。截至窗口结束，高频推送监控在窗口内无成功投递内容</li>
-    </ul>
-  </div>
+    <p class="note">静态回顾；FT 仅一期有效，部分宏观数据过期。各项数字均为出处材料的时点记载，非实时行情。</p>
+  </header>
 
-  <h2>来源状态卡</h2>
-  <div class="cards">
-    <div class="card">
-      <span class="badge b-degrade">降级 · 六轮仅一期</span>
-      <h3>FT 双轮正文简报</h3>
-      <p><span class="k">最新有效版次：</span>2026-09-30 晚刊（20:21 出版）</p>
-      <p><span class="k">内容：</span>一条宏观主线（战争第七个月的能源-利率冲击）贯穿 8 篇双轮核验正文；含独立事件与跨文章整理。</p>
-      <p><span class="k">缺口：</span>窗口内 6 轮中其余 5 轮未出版（采集发现失败×3、预算耗尽×1、评审否决×1），主因本机代理故障。已出版期的 10 段推送有平台接受回执，但用户可见性未经证实。</p>
-    </div>
-    <div class="card">
-      <span class="badge b-degrade">产出正常 · 内容降级</span>
-      <h3>市场因子日报</h3>
-      <p><span class="k">最新核验产物：</span>10-01 16:30（窗口内 3 期全部产出）</p>
-      <p><span class="k">内容：</span>社媒热度较前值大幅回落；信用利差与美元流动性两项数据过期。</p>
-      <p><span class="k">缺口：</span>宏观两项过期，期间该栏不能当实时宏观判断用。</p>
-    </div>
-    <div class="card">
-      <span class="badge b-degrade">产出正常 · 内容降级</span>
-      <h3>开盘桥接</h3>
-      <p><span class="k">最新核验产物：</span>10-02 08:10（3 期产出）</p>
-      <p><span class="k">内容：</span>事件侧仅为页面变更监测（页面更新类事实，未提炼具体新闻）；行情侧隔夜美股源不可用。</p>
-      <p><span class="k">缺口：</span>页面变更不等于新闻事件；行情侧持续不可用。</p>
-    </div>
-    <div class="card">
-      <span class="badge b-degrade">日报正常 · 推送降级</span>
-      <h3>信号质量与推送</h3>
-      <p><span class="k">最新核验产物：</span>信号质量日报 10-01 16:00（3 期正常）</p>
-      <p><span class="k">内容：</span>10-01 期摘要：新增 1 项异常、16 项恢复（个别标的窗口方向翻转、短窗冗余）。</p>
-      <p><span class="k">缺口：</span>信号推送窗口内 47 次运行全部静默或失败（43 静默、4 次脚本失败），无成功推送内容；静默不等于没有信号。</p>
-    </div>
-    <div class="card">
-      <span class="badge b-unknown">证据不足 · 链路未证实</span>
-      <h3>A股观察</h3>
-      <p><span class="k">最新核验产物：</span>大盘复盘 10-01 15:25（3 期产出）</p>
-      <p><span class="k">内容：</span>复盘为只读观察；收盘候选 2 期「市场门关闭」无候选（fail-closed 设计行为），另有静默运行。</p>
-      <p><span class="k">缺口：</span>部署后验收最新一期明确「投递回执文件缺失或不可读」，投递证据未知；产物存在不等于链路完整。</p>
-    </div>
-  </div>
+  <div class="layout">
+    <nav class="toc" aria-label="本刊目录">
+      <ol>
+        <li><a href="#energy">能源成本</a></li>
+        <li><a href="#rates">主权债务与利率</a></li>
+        <li><a href="#ai">AI 基础设施</a></li>
+        <li><a href="#more">另外四篇短读</a></li>
+        <li><a href="#briefs">其他简报</a></li>
+        <li><a href="#coverage">覆盖与缺口</a></li>
+      </ol>
+    </nav>
 
-  <h2>FT 晚刊（2026-09-30 出版）内容速览</h2>
-  <p class="meta">以下为该版次简报记载的内容摘要（摘编，非原文复制；原文付费，链接见文末）。事实条目均出自简报对正文的核验摘录。</p>
-  <div class="art">
-    <h3>① 白宫密议柴油出口禁令，战争燃料危机撞上中期选举</h3>
-    <p>柴油 6.53 美元/加仑、较战前高逾 70%；布伦特收 102.59 美元。禁令选项已上桌：内阁与石油业反对、农业州共和党施压；美方并讨论要求中国提高柴油产量。</p>
-  </div>
-  <div class="art">
-    <h3>② Vanguard 警告法国信用恶化，法债利差创纪录</h3>
-    <p>法国 10 年期收益率从 3.2% 升至逾 4.8%（2008 年以来高位、G7 最大涨幅）；法德利差破 1.2 个百分点（2012 年来首次）、法意利差创纪录；赤字 5.5%、2027 年发债 3400 亿欧元创纪录。</p>
-  </div>
-  <div class="art">
-    <h3>③ 全球债市一日反弹，美债收益率自 2007 年高位回落</h3>
-    <p>30 年期美债 5.56%、10 年期 5.23%（回落 3bp）；金边 5.38%、德债 3.59%；布伦特 103.15 美元；联储期货押注 12 个月内再加息 3-4 次。</p>
-  </div>
-  <div class="art">
-    <h3>④ 科技巨头联盟承诺「社区原则」，对冲数据中心政治反弹</h3>
-    <p>1000+ 社区尝试限制 AI 基础设施；2026 上半年 100+ 项目／2000 亿美元受影响；两党候选人反对立场扩散；参议院本周或表决能源成本提案。</p>
-  </div>
-  <div class="art">
-    <h3>⑤ 肯尼亚法院暂停丹格特 160 亿美元炼厂项目</h3>
-    <p>拉穆炼厂（70 万桶/日）维持现状至 10 月 14 日听证；133 名居民以祖传地权请愿、称无安置补偿与环评；霍尔木兹关闭令东非燃料自主工程更紧迫。</p>
-  </div>
-  <div class="art">
-    <h3>⑥ Flydubai 航班沙特紧急降落，飞行员受伤触发恐袭调查</h3>
-    <p>150 余名乘客航班在塔布克紧急降落；12 分钟内从 34,000 英尺骤降；先发 7700 后改 7500 劫机代码；以色列按可能恐袭调查、机场提高警戒。</p>
-  </div>
-  <div class="art">
-    <h3>⑦ Griffin 向卡内基梅隆捐赠 30 亿美元，美国大学最大单笔捐赠</h3>
-    <p>30 亿美元为美国大学史上最大单笔捐赠（10 亿匹兹堡 + 20 亿迈阿密）；新校区 2028 年招生、约 3500 人；高教界面临联邦拨款削减与 AI 转型双重压力。</p>
-  </div>
-  <div class="art">
-    <h3>⑧ 新加坡政府上线相亲平台，生育率 0.87 的国家工程</h3>
-    <p>FirstDate 面向 21-35 岁公共部门雇员试运行；生育率 0.87 创纪录（韩国 0.8 全球最低）；每孩补贴超 5.5 万新元；今年迈入超老龄社会。</p>
-  </div>
-  <h3 style="margin-top:18px">简报的四条整理结论（报告观点，非本页推断）</h3>
-  <div class="cards">
-    <div class="card">
-      <span class="badge b-degrade">跨文章整理</span>
-      <h3>战争溢价同时写进柴油、美债与法债</h3>
-      <p>三篇独立采写方向一致但不共享信源：柴油 6.53 美元（+70%）、美债 10 年期 5.23%／30 年期 5.56%、法国 10 年期逾 4.8%。报告观点：战争成本从地缘议题变成贴现率与刚性成本，能源不回落则利率难有顶部；改变判断的证据=停火可核验、能源持续回落或美国活动数据转弱。</p>
-    </div>
-    <div class="card">
-      <span class="badge b-degrade">跨文章整理</span>
-      <h3>中期选举成为政策变量放大器</h3>
-      <p>农业州推动柴油禁令与数据中心反弹共享同一选举日程。报告观点：11 月中期选举把能源与 AI 基建从产业议题变成选票议题，政策不确定性溢价上升；两案均无已落地政策文本，改变判断的证据=禁令出台或明确排除、参议院表决、选后国会构成变化。</p>
-    </div>
-    <div class="card">
-      <span class="badge b-unknown">单来源</span>
-      <h3>数据中心政治化：产业用承诺换时间</h3>
-      <p>AIIC 口径（谷歌、Meta、微软等支持）：承诺承担能源成本、资助社区、减水、本地雇佣。报告观点：自愿承诺无执行机制只是舆论对冲，真正约束在参议院能源成本提案；改变判断的证据=成员资本开支实际调整披露、提案通过并生效。</p>
-    </div>
-    <div class="card">
-      <span class="badge b-unknown">单来源</span>
-      <h3>非洲工业化的司法闸门：丹格特炼厂暂停</h3>
-      <p>当事方口径：拉穆项目维持现状至 10-14 听证；丹格特称「没有什么能阻止」，拉各斯炼厂本月获 490 亿美元估值、已成欧洲航煤关键来源。报告观点：燃料自主工程与在地权利程序正义相撞；改变判断的证据=听证结果与投产时间表披露。</p>
-    </div>
-  </div>
+    <main>
+      <section class="sec" id="energy" aria-labelledby="energy-h">
+        <h2 id="energy-h">能源成本：柴油禁令之辩</h2>
+        <article class="art">
+          <h3>白宫密议柴油出口禁令，战争燃料危机撞上中期选举</h3>
+          <p><span class="lab">简报记载：</span>伊朗战争第七个月，特朗普与顾问就是否禁止柴油出口举行危机会议，限制国际柴油销售等选项已上桌，并已向英国等盟友通报可能的供应中断；白宫称「正在评估所有选项」、尚未决定。原文时点记载：柴油上周触及每加仑 6.53 美元、较战前高逾 70%；布伦特收于每桶 102.59 美元、2 月以来涨近 40%。农业州共和党人推动禁令，内阁与石油业反对；美方同时讨论要求中国提高柴油产量。</p>
+          <a class="src" href="https://www.ft.com/content/562f2988-0c04-4669-b0b7-2c16d3821926" rel="noopener">FT 原文 · 2026-09-30 发布 · 可能需订阅</a>
+          <p><span class="lab">报告观点：</span>柴油是运输、农业与工业的刚性成本，6.53 美元直接抬升通胀与成本曲线；禁令若落地将重构炼厂出口利润。跨文章整理：战争成本已从地缘议题变成贴现率与刚性成本——能源不回落，利率难有顶部。</p>
+          <p><span class="lab">仍缺的证据与后续观察：</span>禁令是否出台、范围与豁免均未决；「接近行动」为单一行业人士说法；对中国增产的请求停留在讨论层面；涨势对企业利润的传导未量化；霍尔木兹通行状态与战争终局路径未披露。</p>
+        </article>
+      </section>
 
-  <h2>其他简报要点摘录</h2>
-  <div class="art">
-    <h3>市场因子日报（10-01 期，最新一期）</h3>
-    <p>三栏概览（简报口径）：加密货币 值3·变化1·关注11；美股/AI链 值2·变化0·关注9；A股DSA 值0·变化0·关注7。亮点：社媒最高热度较前值大幅回落（标记为健康·新鲜）。降级项：信用利差与美元流动性两指标在加密与美股两栏均标记过期，宏观读数期间不可作实时判断。</p>
+      <section class="sec" id="rates" aria-labelledby="rates-h">
+        <h2 id="rates-h">主权债务与利率：财政信用的重定价</h2>
+        <article class="art">
+          <h3>Vanguard 警告法国信用「持续恶化」，法债利差创纪录</h3>
+          <p><span class="lab">简报记载：</span>管理 12 万亿美元的 Vanguard 警告法国信用长期恶化：法国 10 年期国债收益率从开战时的 3.2% 升至逾 4.8%（原文时点，2008 年以来高位、G7 最大涨幅，周三盘中一度回落至 4.74% 上方）。法德利差一度突破 1.2 个百分点，为 2012 年以来首次；政府预计今年赤字扩至 GDP 的 5.5%；国库署计划 2027 年净发行 3400 亿欧元中长期债券、创纪录。评级机构 Scope 本月初已将法国从 AA- 下调至 A+。</p>
+          <a class="src" href="https://www.ft.com/content/7820a84f-338e-4b91-a9b6-241a9bf81539" rel="noopener">FT 原文 · 2026-09-30 发布 · 可能需订阅</a>
+          <p><span class="lab">报告观点：</span>法国是全球利率抛售的欧洲震中，与美债在 5% 上方同源——战争通胀与财政定价共振；Vanguard 称法国「安全资产」地位正在流失，危机中买盘可能瞬间消失。</p>
+        </article>
+        <article class="art">
+          <h3>全球债市一日反弹，美债收益率自 2007 年高位回落</h3>
+          <p><span class="lab">简报记载：</span>全球债市周三反弹：10 年期美债收益率跌 3 个基点至 5.23%、30 年期至 5.56%，均自前一日的 2007 年以来高位回落（原文时点）；英国 10 年期金边 5.38%、德国 10 年期 3.59%。美联储本月已重启加息（2023 年以来首次），期货市场押注未来 12 个月再加息 3–4 次——这是市场定价，不是联储承诺。债券价格与收益率互为倒数：此处「收益率回落」即债券价格当日反弹。</p>
+          <a class="src" href="https://www.ft.com/content/cd22d20a-3b65-4534-ac04-f5008810e10a" rel="noopener">FT 原文 · 2026-09-30 发布 · 可能需订阅</a>
+          <p><span class="lab">报告观点：</span>柴油危机、美债高位与法债利差三篇独立采写、方向一致但不共享信源；单日反弹不改收益率上行趋势，油价不回落则利率难有持久顶部。改变判断的证据（报告口径）：停火可核验、能源持续回落，或美国活动数据转弱。</p>
+          <p><span class="lab">仍缺的证据与后续观察：</span>法国 540 亿欧元节支预算能否闯关未决；「利差走阔至 1.5 个百分点」是 Vanguard 单家机构观点；单日反弹不构成趋势证据；本栏全部利率数字为原文时点记载，不是本页生成时的实时行情。</p>
+        </article>
+      </section>
+
+      <section class="sec" id="ai" aria-labelledby="ai-h">
+        <h2 id="ai-h">AI 基础设施：扩张撞上政治</h2>
+        <article class="art">
+          <h3>科技巨头联盟承诺「社区原则」，对冲数据中心政治反弹</h3>
+          <p><span class="lab">简报记载：</span>谷歌、Meta、微软等支持的行业组织 AI 基础设施联盟（AIIC）宣布「社区原则」：成员承担数据中心的能源成本、资助社区组织、减少用水、优先本地雇佣。FT 研究显示全美今年超过 1000 个社区尝试限制 AI 基础设施；Data Center Watch 统计 2026 年上半年此类政策与抗议已影响超过 100 个数据中心项目、合计价值 2000 亿美元。两党候选人反对立场扩散；参议院本周可能表决让 AI 公司承担新增能源成本的提案。</p>
+          <a class="src" href="https://www.ft.com/content/9705f5bf-bc06-481d-b2a3-1299463074b8" rel="noopener">FT 原文 · 2026-09-30 发布 · 可能需订阅</a>
+          <p><span class="lab">报告观点：</span>约束不再是算力需求，而是社区、电力、用水与审批；中期选举把数据中心从地方土地问题升级为全国竞选议题（与柴油禁令共享同一选举日程，政策不确定性溢价上升）。自愿承诺若无执行机制只是舆论对冲，真正的约束在参议院能源成本提案。</p>
+          <p><span class="lab">仍缺的证据与后续观察：</span>项目与社区数字出自 Data Center Watch 单一机构口径；AIIC 承诺为自愿性质、不具法律约束，成员遵守度无核查机制；提案文本与通过概率未披露，议案不等于已生效；成员资本开支的实际调整无已核验披露。</p>
+        </article>
+      </section>
+
+      <section class="sec" id="more" aria-labelledby="more-h">
+        <h2 id="more-h">另外四篇短读</h2>
+        <article class="art">
+          <h3>肯尼亚法院暂停丹格特 160 亿美元炼厂项目</h3>
+          <p>法院裁定拉穆炼厂（70 万桶/日）项目所在地维持现状至 10 月 14 日听证；133 名居民以祖传地权请愿，称无安置补偿与环评。东非燃料自主工程撞上程序正义；「无环评」为请愿方单方主张，听证结果未决。</p>
+          <a class="src" href="https://www.ft.com/content/5bb621fa-2c18-4384-80ab-4a72e51b139a" rel="noopener">FT 原文 · 2026-09-29 发布 · 可能需订阅</a>
+        </article>
+        <article class="art">
+          <h3>Flydubai 航班沙特紧急降落，飞行员受伤触发恐袭调查</h3>
+          <p>迪拜—特拉维夫航班（150 余名乘客）在塔布克紧急降落，12 分钟内自约 34,000 英尺骤降、一度发出劫机代码；以色列按可能的恐怖袭击调查，当局随后表示并非劫机。受伤原因无官方结论，仅作观察项。</p>
+          <a class="src" href="https://www.ft.com/content/7ed6ed48-79e4-46c2-968f-f2a69d263d35" rel="noopener">FT 原文 · 2026-09-30 发布 · 可能需订阅</a>
+        </article>
+        <article class="art">
+          <h3>Griffin 向卡内基梅隆捐赠 30 亿美元，美国大学最大单笔捐赠</h3>
+          <p>Citadel 创始人 Ken Griffin 捐款 30 亿美元：10 亿给匹兹堡主校区、20 亿建迈阿密新校区（2028 年招生、约 3500 人）。信号在人才与区位竞争，短期无定价通道。</p>
+          <a class="src" href="https://www.ft.com/content/3b5b46d7-2dcf-40f0-82f3-65ab6e4be76b" rel="noopener">FT 原文 · 2026-09-30 发布 · 可能需订阅</a>
+        </article>
+        <article class="art">
+          <h3>新加坡政府上线相亲平台，生育率 0.87 的国家工程</h3>
+          <p>FirstDate 面向 21–35 岁公共部门雇员试运行；新加坡总和生育率 0.87 创纪录低位（每孩补贴超 5.5 万新元），今年迈入超老龄社会。人口政策参照系，非市场事件。</p>
+          <a class="src" href="https://www.ft.com/content/a2140178-c1b8-4679-8d89-1f34772c0702" rel="noopener">FT 原文 · 2026-09-30 发布 · 可能需订阅</a>
+        </article>
+      </section>
+
+      <section class="sec" id="briefs" aria-labelledby="briefs-h">
+        <h2 id="briefs-h">其他简报：因子、信号与A股</h2>
+        <article class="art">
+          <h3>市场因子日报（最新产物 2026-10-01 16:30，北京时间）</h3>
+          <p>该日报按加密货币、美股/AI 链、A股三栏汇总因子状态并附有效性统计。最新一期：社媒热度指标自 61.04 回落至 14.31（标记健康、新鲜）；信用利差 3.15% 与美元流动性 9,034 亿美元两项在加密与美股两栏均标注「过期」，摘录未标注其市场数据日期——期间不能当作实时宏观判断。有效性参考：30 天方向命中率约 49.6%（样本 6063），接近随机，方向项基本无预测力；热度波动命中率约 92.1%（样本 3123）。</p>
+        </article>
+        <article class="art">
+          <h3>信号质量日报（2026-10-01 16:00，北京时间）</h3>
+          <p>该日报追踪信号系统的质量异常：同一标的同向信号在短窗内重复（「短窗冗余」）、方向反复翻转、来源过度集中等。最新一期新增 1 项（ARK 方向两次翻转，方向不稳、候选质量降级，待复核触发源与去重），恢复 16 项（如 MOVR、ONE 等短窗冗余消退）。「恢复」指上期异常本期未再出现，属观察性结论。</p>
+        </article>
+        <article class="art">
+          <h3>A股回顾（产物 2026-10-01 生成，北京时间）</h3>
+          <p>大盘复盘为逐日只读观察：9-29 期记「指数稳、结构裂」的缩量分化市；9-30 期记权重护盘、成长杀跌。收盘候选在 9-29、9-30 两期因市场过弱（趋势分 25.0 低于 30 的门槛）按 fail-closed 设计不产候选——设计行为，不是故障。10-01 期报告自带口径提示：其标注日期为国庆假期首日（A股休市），数据与 9-30 收盘高度吻合；原报告按节前最后一个交易日收盘口径解读，实际行情日期未独立核实。</p>
+        </article>
+        <article class="art">
+          <h3>来源缺口：开盘桥接（2026-10-02 08:10，北京时间）</h3>
+          <p>事件侧仅 7 行页面变更记录（OpenAI 博客索引 6 次、Anthropic 新闻页 1 次），未提炼任何具体新闻；隔夜行情源持续不可用。页面变更不等于新闻事件，本刊不将其计为新闻。</p>
+        </article>
+      </section>
+
+      <details id="coverage">
+        <summary>覆盖与缺口：来源、版次、过期项与输出文件统计</summary>
+        <h3>来源覆盖说明</h3>
+        <p>本刊全部正文事实出自 2026-09-30 晚（北京时间 20:21）出版的 FT 精读简报一期：8 篇双轮核验正文、3 条未量化的 Shadow 因子草案、0 条 Citrini 论点。该期四路 FT 索引发现候选 74 篇、尝试 12 篇、入选 8 篇，其余为抽取失败、首发出窗或按优先级未尝试；Citrini 研究源四层均未扫描、Geoscope 索引部分完成（发现 0 条目），故本刊未引用该源。</p>
+        <h3>未出版版次说明</h3>
+        <p>窗口内 FT 早晚刊共 6 轮调度，仅 9-30 晚一期通过评审出版；其余 5 轮未出版（采集发现失败 3 轮、采集预算耗尽 1 轮、评审否决 1 轮），主因本机代理故障。不能据此表述为「三天每天都有 FT」。已出版期的 10 段推送仅获发送侧平台接受回执，读者可见性未证实。</p>
+        <h3>过期项</h3>
+        <p>信用利差与美元流动性两项因子连续多日标注过期（摘录未标注数据日期）；已出版期的市场风险模块基于 9-29 数据，不能当作实时风险读数。</p>
+        <h3>输出文件统计</h3>
+        <p>口径为「已读取输出文件数」，未与执行历史数据库对账：突发新闻监测 49 份、全部静默（无正文）；信号推送 47 份，其中 43 份静默、4 份脚本失败（格式化器依赖缺失）；跨市场事件监控 12 份，其中 11 份有正文、1 份静默，正文均为「页面更新」类事实。输出文件按 UTC 时间命名，本页所引时间均已换算为北京时间。其余内部研究与监控产物不在公开范围。</p>
+      </details>
+
+      <footer>
+        <p>本页为 2026-10-02 窗口收盘后的一次性静态改版：无脚本、无行情接口、无追踪。内部简报以名称、版次与生成时间作出处；FT 原文版权归属 FT，本页仅作摘要式摘编，不构成投资建议。</p>
+      </footer>
+    </main>
   </div>
-  <div class="art">
-    <h3>信号质量日报（10-01 期）</h3>
-    <p>新增 1 · 恶化 0 · 持续 1 · 恢复 16。唯一新增：ARK 窗口方向翻转 2 次（bearish→bullish→bearish），方向不稳、候选质量降级（待复核触发源与去重）。恢复项摘选：MOVR／ARK／ONE／SOON 等短窗冗余、ONE／PAID 方向翻转、单源 market-lite 占比 80%——共 16 项恢复（观察），此处为摘选。</p>
-  </div>
-  <div class="art">
-    <h3>A股大盘复盘（三期一句话，简报原文口径）</h3>
-    <p><strong>9-29：</strong>指数六线普涨但量能继续缩，赚钱效应集中在低位防守型板块，高位科技（CPO/光模块/半导体）杀跌——典型「指数稳、结构裂」缩量分化市；观察成交额能否止跌回升、科技杀跌是否收敛。</p>
-    <p><strong>9-30：</strong>「权重护盘、成长杀跌」：上证50/沪深300 红盘与科创50 重挫、软件服务领跌并存；节后首日观察权重能否稳住、科创50 是否止跌。</p>
-    <p><strong>10-01：</strong>指数微涨与个股普跌背离，权重护盘、科技退潮，「赚指数不赚钱」的分化震荡；观察有色/资源类能否接棒、科创50 能否止跌（该期原文自带数据口径提示）。</p>
-  </div>
-
-  <details>
-    <summary>高频与内部监控明细（口径：窗口内输出文件数，非送达数）</summary>
-    <table>
-      <tr><th>来源</th><th>窗口内运行产物</th><th>状态</th></tr>
-      <tr><td>突发新闻监测（每 30 分钟）</td><td>49 次，全部静默（无输出）</td><td>窗口内无内容产出</td></tr>
-      <tr><td>信号推送（每 15 分钟）</td><td>47 次：43 静默 + 4 脚本失败</td><td>无成功推送</td></tr>
-      <tr><td>跨市场事件监控（每 4 小时）</td><td>12 次：11 次有内容 + 1 次静默</td><td>内容均为「页面更新」类事实（如某来源页面指纹变化），非提炼新闻</td></tr>
-      <tr><td>周报类</td><td>窗口内调度未到</td><td>不计失败</td></tr>
-    </table>
-    <p style="font-size:.9rem;color:#555">另有 4 项每日内部研究与运行监控（论文跟踪、paper 组合、观测审计、归因采集）在窗口内均正常产出；按公开边界不在本页展示内容。静默指运行无输出，不代表来源健康，也不代表市场没有新闻。</p>
-  </details>
-
-  <h2>哪些不能当作结论</h2>
-  <ul class="plain">
-    <li><strong>Citrini 无当期贡献：</strong>唯一出版版次中 Citrini 为 0 条（四层未扫描）。这是该版的事实，不等于该来源无观点。</li>
-    <li><strong>宏观数据过期：</strong>信用利差、美元流动性两项过期；基于旧值的宏观判断应降权。</li>
-    <li><strong>桥接只是页面变更：</strong>「页面更新」类事件未提炼具体新闻，不能当作 7 条已核验新闻。</li>
-    <li><strong>A股投递证据未知：</strong>验收报告自身标明投递回执缺失；「复盘正常产出」不能推出「链路完整」。</li>
-    <li><strong>高频静默 ≠ 没有新闻：</strong>监测源静默或失败只说明本侧链路状态，不是市场没有新闻的证据。</li>
-    <li><strong>正文主题非独立核实：</strong>FT 相关主题（柴油出口限制讨论、法债信用与利差、美债高位、AI 数据中心政治阻力）为已出版报告的记述，本回顾未独立核实这些市场事实。</li>
-    <li><strong>市场风险模块是旧值：</strong>该版报告风险模块基于 9-29 数据且两项不可用，不能作为 10-02 实时风险判断。</li>
-    <li><strong>平台接受 ≠ 用户看见：</strong>推送回执只证明发送侧被平台接受。</li>
-  </ul>
-
-  <h2>来源链接与阅读说明</h2>
-  <p>本回顾引用的 FT 原文（共 8 篇，均为付费来源，阅读可能需要订阅）：</p>
-  <ul class="links">
-    <li>白宫密议柴油出口禁令，战争燃料危机撞上中期选举 — <a href="https://www.ft.com/content/562f2988-0c04-4669-b0b7-2c16d3821926" rel="noopener">ft.com/content/562f2988…</a></li>
-    <li>Vanguard 警告法国信用恶化，法债利差创纪录 — <a href="https://www.ft.com/content/7820a84f-338e-4b91-a9b6-241a9bf81539" rel="noopener">ft.com/content/7820a84f…</a></li>
-    <li>全球债市一日反弹，美债收益率自 2007 年高位回落 — <a href="https://www.ft.com/content/cd22d20a-3b65-4534-ac04-f5008810e10a" rel="noopener">ft.com/content/cd22d20a…</a></li>
-    <li>科技巨头联盟承诺「社区原则」，对冲数据中心政治反弹 — <a href="https://www.ft.com/content/9705f5bf-bc06-481d-b2a3-1299463074b8" rel="noopener">ft.com/content/9705f5bf…</a></li>
-    <li>肯尼亚法院暂停丹格特 160 亿美元炼厂项目 — <a href="https://www.ft.com/content/5bb621fa-2c18-4384-80ab-4a72e51b139a" rel="noopener">ft.com/content/5bb621fa…</a></li>
-    <li>Flydubai 航班沙特紧急降落，飞行员受伤触发恐袭调查 — <a href="https://www.ft.com/content/7ed6ed48-79e4-46c2-968f-f2a69d263d35" rel="noopener">ft.com/content/7ed6ed48…</a></li>
-    <li>Griffin 向卡内基梅隆捐赠 30 亿美元，美国大学最大单笔捐赠 — <a href="https://www.ft.com/content/3b5b46d7-2dcf-40f0-82f3-65ab6e4be76b" rel="noopener">ft.com/content/3b5b46d7…</a></li>
-    <li>新加坡政府上线相亲平台，生育率 0.87 的国家工程 — <a href="https://www.ft.com/content/a2140178-c1b8-4679-8d89-1f34772c0702" rel="noopener">ft.com/content/a2140178…</a></li>
-  </ul>
-  <ul class="plain">
-    <li>内部简报（FT 晚刊／早刊、因子日报、开盘桥接、信号质量日报、A股复盘与候选）以名称／版次／生成日期作出处，不提供内部系统链接。</li>
-    <li>事实与观点区分：来源状态卡中的数字为简报记载的报告内容；报告内标注「研究推断」的部分属报告作者观点；运行状态描述基于本轮对产物与发送回执的核查。</li>
-  </ul>
-
-  <footer>
-    <p><strong>完整性缺口说明：</strong>窗口内 FT 六轮仅一期出版、A股验收投递回执缺失、推送链路多次失败——以上缺口如实列出，未补造任何内容。高频监控计数基于输出文件清单，未与执行历史数据库逐条对账，口径为「输出文件数」而非执行数或送达数。</p>
-    <p>本页为一次性静态回顾（生成于 2026-10-02），无自动更新、无行情接口、无追踪脚本。不构成投资建议。</p>
-  </footer>
-</main>
+</div>
 </body>
 </html>
